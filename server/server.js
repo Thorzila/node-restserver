@@ -35,5 +35,9 @@ app.put('/usuario/:id', function (req, res) {
       id
     })
 })
+
+app.delete('/usuario', (req, res)=>{
+    res.json('delete')
+})
  
 app.listen(port, ()=>console.log('Servidor corriendo en el puerto',port))
